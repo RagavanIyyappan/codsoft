@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <div class="hi">
+    <input type="text" id="display" class="display">
+    <div class="hello">
+      <button class="button" onclick="clearDisplay()"   style="background:red">AC</button>
+      <button class="button" onclick="appendInput('%')" style="background:#87CEEB">%</button>
+      <button class="button" onclick="appendInput('(')" style="background:#87CEEB">(</button>
+      <button class="button" onclick="appendInput(')')" style="background:#87CEEB">)</button>
+      <button class="button" onclick="appendInput('7')" style="background:#D3D3D3">7</button>
+      <button class="button" onclick="appendInput('8')" style="background:#D3D3D3">8</button>
+      <button class="button" onclick="appendInput('9')" style="background:#D3D3D3">9</button>
+      <button class="button" onclick="appendInput('+')" style="background:#87CEEB">+</button>
+      <button class="button" onclick="appendInput('4')" style="background:#D3D3D3">4</button>
+      <button class="button" onclick="appendInput('5')" style="background:#D3D3D3">5</button>
+      <button class="button" onclick="appendInput('6')" style="background:#D3D3D3">6</button>
+      <button class="button" onclick="appendInput('-')" style="background:#87CEEB">-</button>
+      <button class="button" onclick="appendInput('1')" style="background:#D3D3D3">1</button>
+      <button class="button" onclick="appendInput('2')" style="background:#D3D3D3">2</button>
+      <button class="button" onclick="appendInput('3')" style="background:#D3D3D3">3</button>
+      <button class="button" onclick="appendInput('*')" style="background:#87CEEB">*</button>
+      <button class="button" onclick="appendInput('0')" style="background:#D3D3D3">0</button>
+      <button class="button" onclick="appendInput('.')" style="background:#87CEEB">.</button>
+      <button class="button" onclick="calculate()"      style="background:#E6E6FA">=</button>
+      <button class="button" onclick="appendInput('/')" style="background:#87CEEB">/</button>
+    </div>
+  </div>
+
+  <script>
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+
+    function appendInput(value) {
+      document.getElementById('display').value += value;
+    }
+
+    function calculate() {
+      try {
+        document.getElementById('display').value = eval(document.getElementById('display').value);
+      } catch (error) {
+        document.getElementById('display').value = 'Error';
+      }
+    }
+  </script>
+</body>
+</html>

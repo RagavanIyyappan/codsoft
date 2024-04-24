@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fitzone registration</title>
+<style>
+.form {
+    text-align: center;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#F5F5F5;
+}
+label {
+    font-weight:bolder;
+}
+input[type="text"],
+select,
+input[type="tel"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #008080;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #005757;
+}
+.hi{
+    padding:15px;
+    background:linear-gradient(to left,#000000,#333333);
+}
+</style>
+</head>
+<body>
+<div class="hi">
+<form class="form">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name" required><br><br>
+    
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" required><br><br>
+
+    <label for="EmailID">Email ID:</label>
+    <input type="text" id="EmailID" name="EmailID" placeholder="Enter your EmailID"  required><br><br>
+    
+    <label for="gender">Gender:</label>
+            <input type="radio" name="Gender" value="male"><label for="gender male">Male</label>
+            <input type="radio" name="Gender" value="female"><label for="gender female">Female</label>
+            <input type="radio" name="Gender" value="0">Other
+            <br><br>
+    
+    
+    
+    <label for="mobile">Mobile No:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter your Mobile.no" required><br><br>
+    
+    <input type="submit" value="Submit" class="submit-button">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+}
+.hi{
+    background:linear-gradient(45deg,#333333,#bdbdbd,#008080);
+    color:#000000;
+    padding:10px;
+}
+
+ul,li{
+    display:inline;
+}
+ul{
+    margin:43.5%;
+}
+li{
+    cursor:pointer;
+    color:#000000;
+}
+li:hover{
+    color:darkgray;
+}
+.hello{
+    background:linear-gradient(45deg,#333333,#bdbdbd,#008080);
+    color:#000000;
+    padding:10px;
+    text-align:center;
+}
+.fit{
+    padding:55px;
+    background-image: url(834258.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;   
+}
+
